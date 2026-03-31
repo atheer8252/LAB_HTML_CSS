@@ -20,6 +20,12 @@ h2 {
     margin-top: 25px;
     margin-bottom: 10px;
 }
+table, .video-container, form {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 /* Paragraphs */
 p {
@@ -89,7 +95,7 @@ button:hover {
     padding-bottom: 56.25%; /* 16:9 ratio */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 80%;
     margin-bottom: 20px;
 }
 

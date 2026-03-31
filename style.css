@@ -1,0 +1,107 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* Animated Background */
+
+.background{
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(circle at 20% 30%, #00e5ff33, transparent 40%),
+radial-gradient(circle at 80% 70%, #00e5ff22, transparent 40%),
+#020617;
+animation:moveBg 10s infinite alternate;
+z-index:-1;
+}
+
+@keyframes moveBg{
+0%{background-position:0 0, 100% 100%;}
+100%{background-position:100% 50%, 0 50%;}
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:50px;
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#94a3b8;
+font-size:18px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 400px; /* يجعل الكروت تتوزع بجانب بعضها إذا سمحت المساحة */
+}
+
+/* Cards */
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:18px;
+margin-bottom:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.01);
+}
+
+/* Images */
+
+.card img{
+width:100%;
+max-width:480px;
+height:260px;
+object-fit:cover;
+display:block;
+margin:15px auto;
+border-radius:12px;
+}
+
+/* Video */
+
+.video-card iframe{
+width:100%;
+max-width:520px;
+height:300px;
+display:block;
+margin:auto;
+border-radius:12px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+margin-top:40px;
+}
